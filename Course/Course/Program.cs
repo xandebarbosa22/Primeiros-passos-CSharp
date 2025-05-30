@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace Course
 {
@@ -33,6 +34,18 @@ namespace Course
             Console.WriteLine(nome);
             Console.WriteLine(obj1);
             Console.WriteLine(obj2);
+
+            // -------------------------------------------------------
+
+            int num1 = int.MinValue;
+            int num2 = int.MaxValue;
+            sbyte num3 = sbyte.MinValue;
+            decimal num4 = decimal.MaxValue;
+
+            Console.WriteLine(num1);
+            Console.WriteLine(num2);
+            Console.WriteLine(num3);
+            Console.WriteLine(num4);
         }
     }
 }

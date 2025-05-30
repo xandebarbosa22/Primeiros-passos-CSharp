@@ -12,3 +12,4 @@ C:\Users\Alexandre Barbosa\OneDrive\Área de Trabalho\C#\Projects\Course\Course\
 C:\Users\Alexandre Barbosa\OneDrive\Área de Trabalho\C#\Projects\Course\Course\obj\Debug\net9.0\Course.pdb
 C:\Users\Alexandre Barbosa\OneDrive\Área de Trabalho\C#\Projects\Course\Course\obj\Debug\net9.0\Course.genruntimeconfig.cache
 C:\Users\Alexandre Barbosa\OneDrive\Área de Trabalho\C#\Projects\Course\Course\obj\Debug\net9.0\ref\Course.dll
+C:\Users\Alexandre Barbosa\OneDrive\Área de Trabalho\C#\Projects\Course\Course\obj\Debug\net9.0\Course.sourcelink.json

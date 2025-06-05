@@ -35,7 +35,7 @@ namespace Exercicio01
 
             Console.WriteLine("Produtos:");
             Console.WriteLine($"{produto01}, cujo preço é: $ {preco01:F2}");
-            Console.WriteLine($"{produto02}, cujo preço é: $ {preco02:F2}");
+            Console.WriteLine("{0}, cujo preço é: $ {1:F2}", produto02, preco02);
             Console.WriteLine(" ");
             Console.WriteLine($"Registro: {idade} de idade, código {codigo} e gênero: {genero}");
             Console.WriteLine(" ");

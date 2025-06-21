@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Globalization;
+using System.Net.WebSockets;
 
 namespace Exercise01
 {
@@ -57,7 +58,7 @@ namespace Exercise01
 
             double raio_1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             double pi = 3.14159;
-            double area_1 = (double) pi * Math.Pow(raio_1, 2);
+            double area_1 = (double)pi * Math.Pow(raio_1, 2);
 
             Console.WriteLine();
             Console.WriteLine("A=" + area_1.ToString("F4", CultureInfo.InvariantCulture));
@@ -113,6 +114,59 @@ namespace Exercise01
 
             Console.WriteLine();
             Console.WriteLine("DIFERENCA = " + dif_2);
+            Console.WriteLine();
+
+
+            // *-----> Exercício proposto - 03 <-----* //
+
+            /* Fazer um programa que leia o número de um funcionário, seu número de horas trabalhadas, o valor que recebe por
+            hora e calcula o salário desse funcionário. A seguir, mostre o número e o salário do funcionário, com duas casas
+            decimais. */
+
+
+            // Exemplo 01
+            
+            int id_1, horas_1;
+            double valor_hora_1, salario_1;
+
+            id_1 = int.Parse(Console.ReadLine());
+            horas_1 = int.Parse(Console.ReadLine());
+            valor_hora_1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            salario_1 = horas_1 * valor_hora_1;
+
+            Console.WriteLine();
+            Console.WriteLine($"NUMBER = {id_1}");
+            Console.WriteLine($"SALARY = U$ " + salario_1.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine();
+
+            // Exemplo 02
+
+            int id_2, horas_2;
+            double valor_hora_2, salario_2;
+
+            id_2 = int.Parse(Console.ReadLine());
+            horas_2 = int.Parse(Console.ReadLine());
+            valor_hora_2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            salario_2 = horas_2 * valor_hora_2;
+
+            Console.WriteLine();
+            Console.WriteLine($"NUMBER = {id_2}");
+            Console.WriteLine("SALARY = U$ " + salario_2.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine();
+
+            // Exemplo 03
+
+            int id_3, horas_3;
+            double valor_hora_3, salario_3;
+
+            id_3 = int.Parse(Console.ReadLine());
+            horas_3 = int.Parse(Console.ReadLine());
+            valor_hora_3 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            salario_3 = horas_3 * valor_hora_3;
+
+            Console.WriteLine();
+            Console.WriteLine($"NUMBER = {id_3}");
+            Console.WriteLine("SALARY = U$ " + salario_3.ToString("F2", CultureInfo.InvariantCulture));
             Console.WriteLine();
         }
     }

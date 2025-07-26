@@ -7,34 +7,36 @@ namespace Course09
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Digite 3 números inteiros:");
+            double[] vetTeste = new double[3];
+            int i = 0;
 
-            int num1, num2, num3;
-            num1 = int.Parse(Console.ReadLine());
-            num2 = int.Parse(Console.ReadLine());
-            num3 = int.Parse(Console.ReadLine());
+            while (i < 3)
+            {
+                vetTeste[i] = double.Parse(Console.ReadLine());
 
-            int resultado = funcMaior(num1, num2, num3);
+                i++;
+            }
 
-            Console.WriteLine($"O maior número é: {resultado}");
+            double maior = vetTeste.Max();
+            Console.WriteLine(maior);
         }
 
-        static int funcMaior(int a, int b, int c)
-        {
-            int maior;
-            if (a >= b && a >= c)
-            {
-                maior = a;
-            }
-            else if (b > c)
-            {
-                maior = b;
-            }
-            else
-            {
-                maior = c;
-            }
-            return maior;
-        }
+        //static int funcMaior(int a, int b, int c)
+        //{
+        //    int maior;
+        //    if (a >= b && a >= c)
+        //    {
+        //        maior = a;
+        //    }
+        //    else if (b > c)
+        //    {
+        //        maior = b;
+        //    }
+        //    else
+        //    {
+        //        maior = c;
+        //    }
+        //    return maior;
+        //}
     }
 }

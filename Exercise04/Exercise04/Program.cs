@@ -8,7 +8,9 @@ namespace Exercise04
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Digite um número inteiro entre 1 e 1000: ");
+            // Exercício 01
+
+            Console.Write("Digite um número inteiro entre 1 e 1000: ");
             int num = int.Parse(Console.ReadLine());
             int impares = 0;
 
@@ -21,6 +23,33 @@ namespace Exercise04
                     Console.WriteLine(i);
                 }
             }
+
+            // Exercício 02
+
+            Console.Write("Digite quantos números inteiros você deseja inserir: ");
+            int nNumeros = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite os valores abaixo:");
+            int[] vet = new int[nNumeros];
+            int dentro = 0, fora = 0;
+
+            for (int i = 0; i < nNumeros; i++)
+            {
+                vet[i] = int.Parse(Console.ReadLine());
+                
+                if (vet[i] >= 10 && vet[i] <= 20)
+                {
+                    dentro++;
+                }
+                else
+                {
+                    fora++;
+                }
+            }
+            Console.WriteLine("---------------");
+
+            Console.WriteLine("{0} in", dentro);
+            Console.WriteLine($"{fora} out");
         }
     }
 }
